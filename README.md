@@ -1,6 +1,8 @@
 1.this is pleasement cell web application it is created for manage interview of students and allocate student to companies for interview
 
+
 ##Functionality
+
 1.User can SignUp/Signin
 2.Add Student
 3.Delete Student
@@ -12,6 +14,7 @@
 9.Download the CSV report
 
 ##Tools
+
 1.Node Js v-16.18.0
 2.Express Js
 3.Mongodb v-5.0.13
@@ -25,10 +28,10 @@
 
 
 ##Setup in Local System
-1.git clone https://github.com/tush8788/placement-cell-webApp.git
-2.open command prompt and Type 'npm install' for download all dependencies
-3.then just "npm start"/ if npm start is not work just run this command 'node index.js'
-4.then go localhost:8000
+1.git clone:
+2.hosting Link:
+3.open command prompt and Type 'npm install' for download all dependencies
+4.then just "npm start"/ if npm start is not work just run this command 'node index.js'
+5.then go localhost:5000
 
 
-##This Site is hosted on cyclic.sh
