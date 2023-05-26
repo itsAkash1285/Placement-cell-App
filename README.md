@@ -38,8 +38,8 @@
 
 
 ##Setup in Local System
-1.git clone:
-2.hosting Link:
+1.git clone:https://github.com/itsAkash1285/Placement-cell-App
+2.hosting Link:https://itsakash1285.github.io/Placement-cell-App/
 3.open command prompt and Type 'npm install' for download all dependencies
 4.then just "npm start"/ if npm start is not work just run this command 'node index.js'
 5.then go localhost:5000
