@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/css/StudentFrom.css">
+
+<section id="student-form-container">
+  <div class="student-from">
+    <h1>Add Student</h1>
+    <form class="row g-3" method="post" action="/student/create-student">
+      <div class="col-md-6">
+        <label for="inputName4" class="form-label">Student Name</label>
+        <input type="text" class="form-control" name="name" id="inputName4" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Student Email</label>
+        <input type="email" class="form-control" name="email" id="inputEmail4" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputBatch4" class="form-label">Student Batch</label>
+        <input type="text" class="form-control" name="batch" id="inputBatch4" placeholder="Like OCT-21" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCollege4" class="form-label">Student College</label>
+        <input type="text" class="form-control" name="college" id="inputCollege4" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputDSA" class="form-label">DSA Final Score</label>
+        <input type="number" class="form-control" min="0" max="100" name="dsa_score" id="inputDSA" placeholder="0-100"
+          required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputwebd" class="form-label">WebD Final Score</label>
+        <input type="number" class="form-control" min="0" max="100" name="webd_score" id="inputwebd" placeholder="0-100"
+          required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputReact" class="form-label">React Final Score</label>
+        <input type="number" class="form-control" min="0" max="100" name="react_score" id="inputReact"
+          placeholder="0-100" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Student Placement Status</label>
+        <select id="inputState" name="placement_status" class="form-select" required>
+          <option selected value="notplace">Not place</option>
+          <option value="place">Place</option>
+        </select>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <button type="submit" class="btn btn-danger">Add Student</button>
+      </div>
+    </form>
+  </div>
+</section>

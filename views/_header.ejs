@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Placement Cell</a>
+    <div class="d-flex justify-content-evenly">
+      <%if(locals.user){%>
+        <a class="btn btn-danger" href="/download/report-download">GET REPORT</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn btn-danger" href="/student/add-student-page">ADD STUDENT</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn btn-danger" href="/interview/add-company-page">ADD COMPANY</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn btn-danger ml-4" href="/user/signout">SIGN OUT</a>
+      <%}else{%>
+          <a class="btn btn-danger" href="/">SIGN IN</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-danger ml-4" href="/signup">SIGN UP</a>
+      <%}%>
+    </div>
+  </div>
+  </div>
+</nav>

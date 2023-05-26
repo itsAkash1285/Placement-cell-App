@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%=title%>
+    </title>
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/placement-icon-gathering-point-placement-icon-gathering-point-vector-illustration-logo-template-253923886.jpg" type="image/x-icon">
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- bootstrap 5 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- noty notification-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <%-style-%>
+</head>
+
+<body>
+    <%-include('_header')%>
+
+    <%-body%>
+
+    <script>
+        <%if(flash.success && flash.success.length>0){%>
+            new Noty({
+                theme:'relax',
+                text:"<%=flash.success%>",
+                type:"success",
+                layout:'topRight',
+                timeout:'1500'
+            }).show()
+        <%}%>
+        
+        <%if(flash.error && flash.error.length>0){%>
+            new Noty({
+                theme:'relax',
+                text:"<%=flash.error%>",
+                type:"error",
+                layout:'topRight',
+                timeout:'1500'
+            }).show()
+        <%}%>
+    </script>
+</body>
+
+</html>

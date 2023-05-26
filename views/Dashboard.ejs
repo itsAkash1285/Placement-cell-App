@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+<section class="dashboard-display">
+  <!-- <p><%=locals.user.email%></p> -->
+  <div class="student-display">
+    <!-- <h2>Students</h2> -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Batch</th>
+          <th scope="col">Status</th>
+          <th scope="col">View</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%for(let i of allStudent){%>
+          <tr>
+            <td>
+              <%=i.name%>
+            </td>
+            <td>
+              <%=i.email%>
+            </td>
+            <td>
+              <%=i.batch%>
+            </td>
+            <td>
+              <%=i.placement_status%>
+            </td>
+            <td><a href="/student/view-student/<%=i.id%>" class="btn btn-info">View</a></td>
+            <td><a href="/student/delete/<%=i.id%>" class="btn btn-danger">Delete</a></td>
+          </tr>
+          <%}%>
+      </tbody>
+    </table>
+  </div>
+<!-- company container -->
+  <div class="company-display">
+    <table class="table">
+      <!-- <h2>Companies</h2> -->
+      <thead>
+        <tr>
+          <th scope="col">Company Name</th>
+          <th scope="col">Interview Date</th>
+          <th scope="col">Location</th>
+          <th scope="col">Add Students</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%for(let company of allCompany){%>
+          <tr>
+            <td>
+              <%=company.company_name%>
+            </td>
+            <td>
+              <%=company.interview_date%>
+            </td>
+            <td>
+              <%=company.work_location%>
+            </td>
+            <td><a href="/interview/add-student-interview/<%=company.id%>" class="btn btn-warning">Add Interview</a>
+            </td>
+            <td><a href="/interview/delete-conpany/<%=company.id%>" class="btn btn-danger">Delete</a></td>
+          </tr>
+          <%}%>
+      </tbody>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/sign-in-up.css">
+<section id="form-container">
+    <div>
+        <h3>SIGN IN</h3>
+        <form action="/user/create-session" method="post">
+            <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" name="password" class="form-control" id="floatingPassword"
+                    placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button type="submit" class="btn btn-danger form-btn">Sign In</button>
+        </form>
+    </div>
+</section>
